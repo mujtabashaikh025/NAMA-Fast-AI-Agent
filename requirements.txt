@@ -1,6 +1,6 @@
 streamlit
 google-generativeai
-PyPDF2
+pytesseract
+pdf2image
 pandas
 requests
-beautifulsoup4
