@@ -13,7 +13,7 @@ from datetime import datetime, date
 st.set_page_config(page_title="NAMA Compliance Agent", layout="wide")
 
 # HARDCODED API KEY
-api_key = "AIzaSyDwaYLytrIWKf0M3ru4b3hR3R2qh8tPYrE"
+api_key = api_key =  st.secrets["auth_key"] 
 genai.configure(api_key=api_key)
 
 REQUIRED_DOCS = [
