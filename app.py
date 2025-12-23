@@ -11,7 +11,7 @@ from datetime import datetime, date
 
 # --- 1. CONFIGURATION & SETUP ---
 st.set_page_config(page_title="NAMA Compliance Agent", layout="wide")
-
+st.image("nama-logo.png")
 # HARDCODED API KEY
 api_key =  st.secrets["auth_key"] 
 genai.configure(api_key=api_key)
@@ -110,7 +110,7 @@ def analyze_batch(batch_text_list):
         return {}
 
 # --- 4. UI LOGIC ---
-st.title("🛡️ NAMA High-Speed Compliance Audit (OCR Mode)")
+st.title("NAMA High-Speed Compliance Audit")
 
 uploaded_files = st.file_uploader("Upload PDF documents", type=["pdf"], accept_multiple_files=True)
 
